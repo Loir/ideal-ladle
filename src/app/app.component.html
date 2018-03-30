@@ -1,0 +1,16 @@
+<a-scene>
+
+    <a-sky starnest></a-sky>
+
+    <a-sphere [attr.radius]="(0.2 + (beat$|async) * 10)" position="0 1.5 -5" [attr.fireball]="{color: color}|aframe"></a-sphere>
+
+    <a-entity position="0 1.5 -5"
+      [attr.rotation]="{x:0, y: (beat$|async) * -100, z: 0}|aframe"
+      [attr.scale]="(0.2 + (beat$|async) * 10)"
+      [attr.particle-system]="{preset: 'stars'}|aframe"></a-entity>
+
+      <a-entity position="0 1.5 -5" [attr.rotation]="{x:0, y: (beat$|async) * 100, z: (beat$|async) * 50}|aframe"
+      [attr.scale]="(0.2 + (beat$|async) * 10)"
+      [attr.particle-system]="{preset: 'stars', color: ['#ff0000', '#ffff00']}|aframe"></a-entity>
+
+  </a-scene>

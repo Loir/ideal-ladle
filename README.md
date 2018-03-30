@@ -1,2 +1,5 @@
-# ideal-ladle
-remix of https://urish.github.io/vr-audio-visualizer/ for Immersive Tools Project for Autism &amp; Music Education
+# Web VR Audio Visualizer
+
+Visualize Microphone Audio with WebVR
+
+Live demo: https://urish.github.io/vr-audio-visualizer
